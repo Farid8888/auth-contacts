@@ -12,7 +12,8 @@ const SearchContact =()=>{
    const searchRef = useRef()
    const changeHandler =(event)=>{
     changeName(event.target.value)
-   }
+   }  
+   
    useEffect(()=>{
        if(searchRef.current.value===name){
         sendRequest()
